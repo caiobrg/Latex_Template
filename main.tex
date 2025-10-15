@@ -1,0 +1,56 @@
+% In: main.tex
+\documentclass[12pt, a4paper]{article}
+
+%=====================================================
+% PREAMBLE: Load all packages and custom settings
+%=====================================================
+\input{settings/packages.tex}
+\input{settings/lststyles.tex}
+\input{settings/commands.tex}
+
+%=====================================================
+% DOCUMENT-SPECIFIC INFORMATION (METADATA)
+% Define all variables for this specific document here.
+%=====================================================
+% --- Main Info ---
+\title{TEMPLATE}
+\author{TEMPLATE}
+\date{\today}
+
+% --- Custom Variables ---
+\newcommand{\myheadertitle}{Dimensionamento de mola - Ressonância e Surto}
+\newcommand{\myuniversity}{Universidade de Brasília}
+\newcommand{\myfaculty}{Faculdade de Tecnologia}
+\newcommand{\mydepartment}{Departamento de Engenharia Mecânica}
+\newcommand{\mycourse}{TROCAR PARA A MATÉRIA}
+\newcommand{\myprofessor}{TROCAR PARA O PROFESSOR}
+
+% This logic makes \thetitle and \theauthor available to your custom title page
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+%=====================================================
+% DOCUMENT BODY
+%=====================================================
+\begin{document}
+
+% 1. Render the title page from its dedicated file
+\input{settings/titlepage.tex}
+
+% 2. Add Table of Contents, etc.
+\tableofcontents
+\listoffigures
+\pagebreak
+
+% 3. Include the main content
+% I've renamed the files and folder for clarity and to avoid spaces
+%\include{content/01_Relatorio_Tecnico}
+%\include{content/02_Memorial_de_Calculo}
+
+% 4. Print the bibliography
+% \printbibliography
+
+\end{document}

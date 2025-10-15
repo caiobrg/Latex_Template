@@ -1,0 +1,25 @@
+% In: settings/titlepage.tex
+
+\begin{titlepage}
+    \centering
+    % Use a relative path assuming the 'figures' folder is in the root
+    \includegraphics[scale = 0.25]{logo_unb.png}\\[1.0 cm]
+
+    \textsc{\LARGE \myuniversity}\\[0.1 cm]
+    \textsc{\LARGE \myfaculty}\\[0.1 cm]
+    \textsc{\LARGE \mydepartment}\\[2.0 cm]
+
+    \textsc{\Large \mycourse}\\[0.5 cm]
+    \textsc{\large \myprofessor}\\[0.5 cm]
+
+    \rule{\linewidth}{0.2 mm} \\[0.4 cm]
+    { \huge \bfseries \thetitle} % Uses \thetitle from main.tex
+    \rule{\linewidth}{0.2 mm} \\[1.5 cm]
+
+    \vfill
+
+    \theauthor % Uses \theauthor from main.tex
+    \vspace{1cm}
+
+    \bf{\thedate} % Uses the date defined in main.tex
+\end{titlepage}

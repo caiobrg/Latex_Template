@@ -1,0 +1,54 @@
+% In: settings/commands.tex
+
+% Setup for hyperref package
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Relatório Técnico e Memorial de Cálculo},
+    pdfpagemode=FullScreen,
+}
+
+% Path for figures (assumes a 'figures' folder in the root directory)
+\graphicspath{ {./figures/} }
+
+% Connect the .bib file to biblatex
+\addbibresource{references.bib}
+
+% Custom environment for indented quotes/citations
+\newenvironment{cited3}
+{\vspace{12pt}\hfill\begin{minipage}{12cm}}
+        {\end{minipage}\vspace{12pt}}
+
+% Configure the header and footer style with fancyhdr
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\rhead{\fontfamily{LinuxBiolinumT-OsF}\selectfont \myheadertitle}
+\lhead{\fontfamily{LinuxBiolinumT-OsF}\selectfont \footnotesize \leftmark}
+\cfoot{\thepage}
+
+\lstset{style = solarized-light, language=Python}
+% dracula
+% black-on-white
+% gnometerm
+% gotham
+% gruvbox-dark
+% gruvbox-light
+% material
+% nancy
+% neon
+% rydgel
+% nord
+% seashells
+% smyck
+% solarized-dark
+% solarized-light
+% tokyonight
+% white-on-black
+% wild-cherry
+% zenburn
+% vscode
+% jupyter
+% mystyle

@@ -1,0 +1,376 @@
+%% ESTILO BASE:
+\lstdefinestyle{base-style}{
+basicstyle=\ttfamily\scriptsize,
+breakatwhitespace=true,
+breaklines=true,
+captionpos=b,
+keepspaces=true,
+numbers=left,
+numbersep=5pt,
+showstringspaces=false,
+tabsize=2,
+inputencoding=utf8,
+literate=
+    {á}{{\'a}}1 {ã}{{\~a}}1 {à}{{\`a}}1 {â}{{\^a}}1
+{é}{{\'e}}1 {ê}{{\^e}}1
+{í}{{\'i}}1
+{ó}{{\'o}}1 {õ}{{\~o}}1 {ô}{{\^o}}1
+{ú}{{\'u}}1 {ç}{{\c c}}1
+{Á}{{\'A}}1 {Ã}{{\~A}}1 {À}{{\`A}}1 {Â}{{\^A}}1
+{É}{{\'E}}1 {Ê}{{\^E}}1
+{Í}{{\'I}}1
+{Ó}{{\'O}}1 {Õ}{{\~O}}1 {Ô}{{\^O}}1
+{Ú}{{\'U}}1 {Ç}{{\c C}}1
+{°}{{$^\circ$}}1
+}
+
+
+%% TEMAS:
+
+% Dracula
+\definecolor{drac-bg}{RGB}{40,42,54}
+\definecolor{drac-comment}{RGB}{98,114,164}
+\definecolor{drac-keyword}{RGB}{255,121,198}
+\definecolor{drac-string}{RGB}{241,250,140}
+\definecolor{drac-number}{RGB}{189,147,249}
+\lstdefinestyle{dracula}{
+    style=base-style,
+    backgroundcolor=\color{drac-bg},
+    basicstyle=\ttfamily\fontfamily{pcr}\scriptsize\color{white},
+    commentstyle=\color{drac-comment},
+    keywordstyle=\color{drac-keyword},
+    stringstyle=\color{drac-string},
+    numberstyle=\color{drac-number},
+}
+
+% BLACK ON WHITE
+\definecolor{bkw-bg}{RGB}{255,255,255}
+\definecolor{bkw-comment}{RGB}{150,150,150}
+\definecolor{bkw-keyword}{RGB}{0,0,255}
+\definecolor{bkw-string}{RGB}{163,21,21}
+\definecolor{bkw-number}{RGB}{173,0,168}
+\lstdefinestyle{black-on-white}{
+    style=base-style,
+    backgroundcolor=\color{bkw-bg},
+    commentstyle=\color{bkw-comment},
+    keywordstyle=\color{bkw-keyword},
+    stringstyle=\color{bkw-string},
+    numberstyle=\color{bkw-number},
+}
+
+% GNOMETERM
+\definecolor{gt-bg}{RGB}{46,52,54}
+\definecolor{gt-comment}{RGB}{136,138,133}
+\definecolor{gt-keyword}{RGB}{114,159,207}
+\definecolor{gt-string}{RGB}{175,229,124}
+\definecolor{gt-number}{RGB}{233,185,110}
+\lstdefinestyle{gnometerm}{
+    style=base-style,
+    backgroundcolor=\color{gt-bg},
+    basicstyle=\ttfamily\fontfamily{pcr}\scriptsize\color{white},
+    commentstyle=\color{gt-comment},
+    keywordstyle=\color{gt-keyword},
+    stringstyle=\color{gt-string},
+    numberstyle=\color{gt-number},
+}
+
+% GOTHAM
+\definecolor{gh-bg}{RGB}{15,20,25}
+\definecolor{gh-comment}{RGB}{103,115,122}
+\definecolor{gh-keyword}{RGB}{192,117,160}
+\definecolor{gh-string}{RGB}{148,191,243}
+\definecolor{gh-number}{RGB}{255,209,94}
+\lstdefinestyle{gotham}{
+    style=base-style,
+    backgroundcolor=\color{gh-bg},
+    basicstyle=\ttfamily\fontfamily{pcr}\scriptsize\color{white},
+    commentstyle=\color{gh-comment},
+    keywordstyle=\color{gh-keyword},
+    stringstyle=\color{gh-string},
+    numberstyle=\color{gh-number},
+}
+
+% GRUVBOX DARK
+\definecolor{gd-bg}{RGB}{40,40,40}
+\definecolor{gd-comment}{RGB}{146,131,116}
+\definecolor{gd-keyword}{RGB}{251,73,52}
+\definecolor{gd-string}{RGB}{184,187,38}
+\definecolor{gd-number}{RGB}{211,134,155}
+\lstdefinestyle{gruvbox-dark}{
+    style=base-style,
+    backgroundcolor=\color{gd-bg},
+    basicstyle=\ttfamily\fontfamily{pcr}\scriptsize\color{white},
+    commentstyle=\color{gd-comment},
+    keywordstyle=\color{gd-keyword},
+    stringstyle=\color{gd-string},
+    numberstyle=\color{gd-number},
+}
+
+% GRUVBOX LIGHT
+\definecolor{gl-bg}{RGB}{251,241,199}
+\definecolor{gl-comment}{RGB}{146,131,116}
+\definecolor{gl-keyword}{RGB}{157,0,6}
+\definecolor{gl-string}{RGB}{121,116,14}
+\definecolor{gl-number}{RGB}{181,118,20}
+\lstdefinestyle{gruvbox-light}{
+    style=base-style,
+    backgroundcolor=\color{gl-bg},
+    commentstyle=\color{gl-comment},
+    keywordstyle=\color{gl-keyword},
+    stringstyle=\color{gl-string},
+    numberstyle=\color{gl-number},
+}
+
+%% MATERIAL 
+\definecolor{mt-bg}{RGB}{38,50,56}
+\definecolor{mt-comment}{RGB}{84,110,122}
+\definecolor{mt-keyword}{RGB}{199,146,234}
+\definecolor{mt-string}{RGB}{195,232,141}
+\definecolor{mt-number}{RGB}{247,118,105}
+\lstdefinestyle{material}{
+    style=base-style,
+    backgroundcolor=\color{mt-bg},
+    basicstyle=\ttfamily\fontfamily{pcr}\scriptsize\color{white},
+    commentstyle=\color{mt-comment},
+    keywordstyle=\color{mt-keyword},
+    stringstyle=\color{mt-string},
+    numberstyle=\color{mt-number},
+}
+
+% NANCY
+\definecolor{nc-bg}{RGB}{239,238,236}
+\definecolor{nc-comment}{RGB}{172,149,159}
+\definecolor{nc-keyword}{RGB}{107,106,119}
+\definecolor{nc-string}{RGB}{189,142,107}
+\definecolor{nc-number}{RGB}{158,93,70}
+\lstdefinestyle{nancy}{
+    style=base-style,
+    backgroundcolor=\color{nc-bg},
+    commentstyle=\color{nc-comment},
+    keywordstyle=\color{nc-keyword},
+    stringstyle=\color{nc-string},
+    numberstyle=\color{nc-number},
+}
+
+% NEON
+\definecolor{ne-bg}{RGB}{0,0,0}
+\definecolor{ne-comment}{RGB}{255,0,255}
+\definecolor{ne-keyword}{RGB}{0,255,255}
+\definecolor{ne-string}{RGB}{0,255,0}
+\definecolor{ne-number}{RGB}{255,255,0}
+\lstdefinestyle{neon}{
+    style=base-style,
+    backgroundcolor=\color{ne-bg},
+    basicstyle=\ttfamily\fontfamily{pcr}\scriptsize\color{white},
+    commentstyle=\color{ne-comment},
+    keywordstyle=\color{ne-keyword},
+    stringstyle=\color{ne-string},
+    numberstyle=\color{ne-number},
+}
+
+% RYD GEL
+\definecolor{rg-bg}{RGB}{34,33,27}
+\definecolor{rg-comment}{RGB}{126,124,122}
+\definecolor{rg-keyword}{RGB}{245,76,79}
+\definecolor{rg-string}{RGB}{142,208,83}
+\definecolor{rg-number}{RGB}{255,180,0}
+\lstdefinestyle{rydgel}{
+    style=base-style,
+    backgroundcolor=\color{rg-bg},
+    basicstyle=\ttfamily\fontfamily{pcr}\scriptsize\color{white},
+    commentstyle=\color{rg-comment},
+    keywordstyle=\color{rg-keyword},
+    stringstyle=\color{rg-string},
+    numberstyle=\color{rg-number},
+}
+
+% NORD
+\definecolor{nd-bg}{RGB}{46,52,64}
+\definecolor{nd-comment}{RGB}{76,86,106}
+\definecolor{nd-keyword}{RGB}{129,161,193}
+\definecolor{nd-string}{RGB}{163,190,140}
+\definecolor{nd-number}{RGB}{180,142,173}
+\lstdefinestyle{nord}{
+    style=base-style,
+    backgroundcolor=\color{nd-bg},
+    basicstyle=\ttfamily\fontfamily{pcr}\scriptsize\color{white},
+    commentstyle=\color{nd-comment},
+    keywordstyle=\color{nd-keyword},
+    stringstyle=\color{nd-string},
+    numberstyle=\color{nd-number},
+}
+
+% SEASHELLS
+\definecolor{ss-bg}{RGB}{245,245,220}
+\definecolor{ss-comment}{RGB}{160,82,45}
+\definecolor{ss-keyword}{RGB}{0,139,139}
+\definecolor{ss-string}{RGB}{139,0,139}
+\definecolor{ss-number}{RGB}{184,134,11}
+\lstdefinestyle{seashells}{
+    style=base-style,
+    backgroundcolor=\color{ss-bg},
+    commentstyle=\color{ss-comment},
+    keywordstyle=\color{ss-keyword},
+    stringstyle=\color{ss-string},
+    numberstyle=\color{ss-number},
+}
+
+% SMYCK
+\definecolor{sm-bg}{RGB}{47,27,41}
+\definecolor{sm-comment}{RGB}{102,91,111}
+\definecolor{sm-keyword}{RGB}{255,0,0}
+\definecolor{sm-string}{RGB}{0,159,76}
+\definecolor{sm-number}{RGB}{255,149,0}
+\lstdefinestyle{smyck}{
+    style=base-style,
+    backgroundcolor=\color{sm-bg},
+    basicstyle=\ttfamily\fontfamily{pcr}\scriptsize\color{white},
+    commentstyle=\color{sm-comment},
+    keywordstyle=\color{sm-keyword},
+    stringstyle=\color{sm-string},
+    numberstyle=\color{sm-number},
+}
+
+% SOLARIZED DARK
+\definecolor{sd-bg}{RGB}{0,43,54}
+\definecolor{sd-comment}{RGB}{88,110,117}
+\definecolor{sd-keyword}{RGB}{38,139,210}
+\definecolor{sd-string}{RGB}{42,161,152}
+\definecolor{sd-number}{RGB}{211,54,130}
+\lstdefinestyle{solarized-dark}{
+    style=base-style,
+    backgroundcolor=\color{sd-bg},
+    basicstyle=\ttfamily\fontfamily{pcr}\scriptsize\color{white},
+    commentstyle=\color{sd-comment},
+    keywordstyle=\color{sd-keyword},
+    stringstyle=\color{sd-string},
+    numberstyle=\color{sd-number},
+}
+
+% SOLARIZED LIGHT
+\definecolor{sl-bg}{RGB}{253,246,227}
+\definecolor{sl-comment}{RGB}{147,161,161}
+\definecolor{sl-keyword}{RGB}{38,139,210}
+\definecolor{sl-string}{RGB}{42,161,152}
+\definecolor{sl-number}{RGB}{211,54,130}
+\lstdefinestyle{solarized-light}{
+    style=base-style,
+    backgroundcolor=\color{sl-bg},
+    commentstyle=\color{sl-comment},
+    keywordstyle=\color{sl-keyword},
+    stringstyle=\color{sl-string},
+    numberstyle=\color{sl-number},
+}
+
+% TOKYONIGHT
+\definecolor{tn-bg}{RGB}{26,27,38}
+\definecolor{tn-comment}{RGB}{86,95,137}
+\definecolor{tn-keyword}{RGB}{122,162,247}
+\definecolor{tn-string}{RGB}{158,206,106}
+\definecolor{tn-number}{RGB}{255,158,100}
+\lstdefinestyle{tokyonight}{
+    style=base-style,
+    backgroundcolor=\color{tn-bg},
+    basicstyle=\ttfamily\fontfamily{pcr}\scriptsize\color{white},
+    commentstyle=\color{tn-comment},
+    keywordstyle=\color{tn-keyword},
+    stringstyle=\color{tn-string},
+    numberstyle=\color{tn-number},
+}
+
+% WHITE ON BLACK
+\definecolor{wkb-bg}{RGB}{0,0,0}
+\definecolor{wkb-comment}{RGB}{128,128,128}
+\definecolor{wkb-keyword}{RGB}{255,255,255}
+\definecolor{wkb-string}{RGB}{0,255,0}
+\definecolor{wkb-number}{RGB}{255,165,0}
+\lstdefinestyle{white-on-black}{
+    style=base-style,
+    backgroundcolor=\color{wkb-bg},
+    basicstyle=\ttfamily\fontfamily{pcr}\scriptsize\color{white},
+    commentstyle=\color{wkb-comment},
+    keywordstyle=\color{wkb-keyword},
+    stringstyle=\color{wkb-string},
+    numberstyle=\color{wkb-number},
+}
+
+% WILD CHERRY
+\definecolor{wc-bg}{RGB}{43,27,37}
+\definecolor{wc-comment}{RGB}{163,86,97}
+\definecolor{wc-keyword}{RGB}{255,83,112}
+\definecolor{wc-string}{RGB}{255,134,154}
+\definecolor{wc-number}{RGB}{255,184,108}
+\lstdefinestyle{wild-cherry}{
+    style=base-style,
+    backgroundcolor=\color{wc-bg},
+    basicstyle=\ttfamily\fontfamily{pcr}\scriptsize\color{white},
+    commentstyle=\color{wc-comment},
+    keywordstyle=\color{wc-keyword},
+    stringstyle=\color{wc-string},
+    numberstyle=\color{wc-number},
+}
+
+%% ZENBURN
+\definecolor{zb-bg}{RGB}{63,63,63}
+\definecolor{zb-comment}{RGB}{127,159,127}
+\definecolor{zb-keyword}{RGB}{240,223,175}
+\definecolor{zb-string}{RGB}{204,147,147}
+\definecolor{zb-number}{RGB}{223,175,143}
+\lstdefinestyle{zenburn}{
+    style=base-style,
+    backgroundcolor=\color{zb-bg},
+    basicstyle=\ttfamily\fontfamily{pcr}\scriptsize\color{white},
+    commentstyle=\color{zb-comment},
+    keywordstyle=\color{zb-keyword},
+    stringstyle=\color{zb-string},
+    numberstyle=\color{zb-number},
+}
+
+
+%% MY STYLE
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.8,0,0.2}
+\definecolor{backcolour}{rgb}{.95,.95,1}
+\lstdefinestyle{mystyle}{
+    style=base-style,
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+}
+
+%% VSCODE (Dark) 
+\definecolor{vsc-bg}{RGB}{30,30,30}
+\definecolor{vsc-comment}{RGB}{106,153,85}
+\definecolor{vsc-keyword}{RGB}{86,156,214}
+\definecolor{vsc-string}{RGB}{206,145,120}
+\definecolor{vsc-number}{RGB}{181,206,168}
+\lstdefinestyle{vscode}{
+    style=base-style,
+    backgroundcolor=\color{vsc-bg},
+    basicstyle=\ttfamily\fontfamily{pcr}\scriptsize\color{white},
+    commentstyle=\color{vsc-comment},
+    keywordstyle=\color{vsc-keyword},
+    stringstyle=\color{vsc-string},
+    numberstyle=\color{vsc-number},
+}
+
+
+
+%% JUPYTER NOTEBOOK (Light)
+\definecolor{jn-bg}{RGB}{250,250,250}
+\definecolor{jn-comment}{RGB}{0,128,0}
+\definecolor{jn-keyword}{RGB}{0,0,255}
+\definecolor{jn-string}{RGB}{163,21,21}
+\definecolor{jn-number}{RGB}{9,134,88}
+\lstdefinestyle{jupyter}{
+    style=base-style,
+    backgroundcolor=\color{jn-bg},
+    basicstyle=\ttfamily\fontfamily{pcr}\scriptsize\color{black},
+    commentstyle=\color{jn-comment},
+    keywordstyle=\color{jn-keyword},
+    stringstyle=\color{jn-string},
+    numberstyle=\color{jn-number},
+}

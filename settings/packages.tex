@@ -1,0 +1,88 @@
+% In: settings/packages.tex
+
+%======================================================================
+% 1. LANGUAGE AND FONT ENCODING
+% Essential for correct hyphenation, character display, and quotes.
+%======================================================================
+\usepackage[portuguese]{babel} % Language-specific settings for Portuguese
+\usepackage[utf8]{inputenc}     % (Still good practice for compatibility)
+\usepackage[T1]{fontenc}        % Modern font encoding for output
+\usepackage{csquotes}           % Context-sensitive quotation marks
+
+%======================================================================
+% 2. TYPOGRAPHY AND LAYOUT
+% Controls the look and feel of the page and text.
+%======================================================================
+\usepackage{libertine}     % For the Libertine font family
+\usepackage[final, nopatch=footnote]{microtype} % Improves typography (justification, spacing)
+
+% --- PAGE GEOMETRY (REPLACES vmargin) ---
+% Modern and powerful way to control margins and page layout.
+\usepackage[
+  left=3cm,
+  right=3cm,
+  top=2.5cm,
+  bottom=2.5cm,
+  headheight=1.5cm % Adjust as needed for your header
+]{geometry}
+
+% --- PARAGRAPH STYLE ---
+% CHOOSE ONE of the following two styles.
+% Style A: Space between paragraphs, no indent (parskip is active).
+\usepackage[skip=5pt]{parskip}
+% \usepackage{indentfirst} % DO NOT use with parskip.
+
+% Style B: Indented paragraphs (the LaTeX default).
+% To use this, COMMENT OUT the \usepackage{parskip} line above,
+% and UNCOMMENT the \usepackage{indentfirst} line below.
+% \usepackage{indentfirst}
+
+% --- HEADERS AND FOOTERS ---
+\usepackage{fancyhdr}
+
+%======================================================================
+% 3. MATH AND SYMBOLS
+%======================================================================
+\usepackage{amsmath, amssymb} % Essential AMS math packages
+\usepackage{breqn}             % For automatic line breaking of equations
+\usepackage{steinmetz}         % For phasors and other engineering notation
+
+%======================================================================
+% 4. TABLES AND FIGURES
+%======================================================================
+\usepackage{graphicx}     % For including images (\includegraphics)
+\usepackage{booktabs}     % For professional-looking tables (\toprule, \midrule)
+\usepackage{tabularx}     % For tables with auto-adjusting column widths
+\usepackage{multicol}     % For multi-column text
+\usepackage{subcaption}   % For subfigures (e.g., Figure 1a, 1b)
+\usepackage{float}        % Improved control over float placement [H]
+\usepackage{makecell}     % For line breaks and advanced formatting within table cells
+
+%======================================================================
+% 5. DOCUMENT STRUCTURE AND REFERENCES
+%======================================================================
+% For bibliography in the table of contents
+\usepackage[numbib, nottoc, notlof]{tocbibind}
+\usepackage{pdfpages} % To include external PDF files
+
+%======================================================================
+% 6. CODE LISTINGS
+%======================================================================
+\usepackage{listings}
+\usepackage{xcolor}   % Required for colored listings (and other color needs)
+
+%======================================================================
+% 7. CITATIONS
+%======================================================================
+\usepackage[
+  backend=biber,
+  style=nature,
+]{biblatex}
+
+%======================================================================
+% 8. HYPERLINKS AND URLS (LOAD LAST)
+%======================================================================
+\usepackage{xurl} % Allows line breaks in URLs anywhere. Better than the default.
+\usepackage{hyperref}
+\usepackage{bookmark} % Improves PDF bookmark generation with hyperref
+

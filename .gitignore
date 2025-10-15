@@ -1,0 +1,21 @@
+# General LaTeX auxiliary files
+*.aux
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ind
+*.ilg
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.synctex.gz
+
+# Compiled document
+*.pdf
