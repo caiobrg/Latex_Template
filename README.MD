@@ -6,23 +6,24 @@ Este é um modelo base para a criação de documentos acadêmicos (relatórios, 
 ## Estrutura de Diretórios
 
 O projeto está organizado da seguinte forma:
+```
 .
-├── main.tex              # Arquivo principal, o "maestro" do documento
-├── bibliography.bib      # Arquivo para as referências bibliográficas
-├── README.md             # Este arquivo
-├── .gitignore            # Ignora arquivos temporários do LaTeX no Git
-│
-├── content/              # Pasta para os arquivos de conteúdo (.tex)
-│   ├── 01_introducao.tex
-│   └── ...
-│
-├── settings/             # Pasta para as configurações do documento
-│   ├── packages.tex      # Onde todos os pacotes são importados
-│   ├── commands.tex      # Comandos personalizados e configurações
-│   └── titlepage.tex     # Código da página de rosto customizada
-│
-└── figures/              # Pasta para todas as imagens e figuras
-└── placeholder.png
+├── content
+│   ├── 01_introduction.tex
+│   ├── 02_development.tex
+│   ├── 03_conclusion.tex
+│   └── Z_appendix.tex
+├── figures
+│   └── logo_unb.png
+├── main.tex
+├── README.MD
+├── references.bib
+└── settings
+    ├── commands.tex
+    ├── lststyles.tex
+    ├── packages.tex
+    └── titlepage.tex
+```
 
 ## Como Usar
 
@@ -40,3 +41,4 @@ No terminal, na pasta raiz do projeto, execute:
 
 ```bash
 latexmk -pdf -pvc main.tex
+```
